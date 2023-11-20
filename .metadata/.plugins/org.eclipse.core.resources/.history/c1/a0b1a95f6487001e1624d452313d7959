@@ -1,0 +1,11 @@
+package com.test.spring.di02;
+
+public class Choi {
+
+	public void doSomething() {
+
+		System.out.println("Choi 업무 중..");
+		
+	}
+
+}

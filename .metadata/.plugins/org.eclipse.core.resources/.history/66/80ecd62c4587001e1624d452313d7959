@@ -1,0 +1,44 @@
+
+
+
+Servlet/JSP : 초반(쉬움) > 후반(어려움)
+Spring		: 초반(어려움) > 후반(쉬움) > 프레임워크
+
+
+Spring Framework
+- https://spring.io
+- Spring 1.0 ~ 6.0
+- Spring 3.xx ~ 5.xx > Spring 5.xx 수업
+- 자바 플랫폼을 위한 오픈 소스 애플리케이션 프레임워크이다
+- 콘솔 or 응용 or 웹 응용
+- 현업 > 웹 응용 제작
+- Sevlet/JSP > 버전업
+- 전자 정부 표준 프레임워크로 채택 
+
+
+스프링 코어 + 추가 프로젝트 = 스프링
+- Spring
+- Spring MVC
+- Spring AOP
+- Spring Data
+- Spring Security
+- Spring Boot
+..
+
+
+
+
+
+스프링 프로젝트 구성 요소(주요 구술)
+1. POJO 기반, Plain Old Java Object Java로 생성하는 순수한 객체를 뜻한다.
+
+
+
+
+
+
+
+
+
+
+
