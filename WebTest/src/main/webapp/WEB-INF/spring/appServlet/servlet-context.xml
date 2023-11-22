@@ -36,8 +36,6 @@
 	
 	<beans:bean name="/ex01.do" class="com.test.spring.controller.Ex01Controller"></beans:bean>
 	
-	
-	
 	<beans:bean id="dao" class="com.test.spring.persistence.SpringDAOImpl"></beans:bean>
 	
 	<beans:bean name="/ex02.do" class="com.test.spring.controller.Ex02Controller">

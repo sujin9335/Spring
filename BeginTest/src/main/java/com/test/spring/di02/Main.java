@@ -36,6 +36,7 @@ public class Main {
 		//빈을 1개 주세요 > 객체를 1개 주세요 > 객체를 1개 생성해주세요
 		//								  new Pen();
 		
+		//Pen p2=new Pen() 을 XML 파일에서 대신처리해준다
 		Pen p2=(Pen)context.getBean("pen");
 		p2.write();
 		

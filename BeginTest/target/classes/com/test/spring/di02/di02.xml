@@ -48,6 +48,7 @@
 	
 	-->
 	
+	<!-- 정석 방식이나 너무 복잡함 -->
 	<!-- <bean class="com.test.spring.di02.Park">
 		<constructor-arg>
 			<bean class="com.test.spring.di02.Choi">
@@ -62,7 +63,7 @@
 	
 	
 	<bean id="choi" class="com.test.spring.di02.Choi">
-		<!-- 위에 brush 있어서 사용 -->
+		<!-- 위에 brush 있어서 사용, setter 설정 -->
 		<property name="brush" ref="brush"></property>
 	</bean>
 	

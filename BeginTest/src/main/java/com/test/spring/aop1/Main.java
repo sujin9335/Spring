@@ -12,6 +12,7 @@ public class Main {
 		
 		//스프링 혜택 적용 > 반드시 객체를 스프링을 통해서 생성해야 한다
 		
+		//스프링 객체
 		ApplicationContext context=new ClassPathXmlApplicationContext("com/test/spring/aop1/memo.xml");
 		
 		Memo memo=(Memo)context.getBean("memo"); //= new Memolmpl
