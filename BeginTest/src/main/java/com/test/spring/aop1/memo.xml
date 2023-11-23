@@ -26,8 +26,8 @@
 	<!-- 보조업무 객체 -->
 	<bean id="logger" class="com.test.spring.aop1.Logger"></bean>
 	
-	<!-- 주업무 객체 + 보조업무 객체 :: AOP : 상단에 xmlns:aop 이거 지칭-->
-	<aop:config>
+	<!-- 주업무 객체 + 보조업무 객체 선언 :: AOP : 상단에 xmlns:aop 이거 지칭-->
+	<aop:config> 
 		<!-- 보조업무를 담당할 객체를 지정: 역할 지정 -->
 		<aop:aspect id="loggerAspect" ref="logger">
 			<!--
@@ -58,11 +58,12 @@
 			<aop:pointcut expression="execution(public String com.test.spring.aop1.MemoImpl.read(int)) || 
 									execution(public void com.test.spring.aop1.MemoImpl.add(String))" id="p3"/>
 			
-			<aop:pointcut expression="execution(public void add(int))" id="p4"/>
+			<!-- 같은 패키지 내에 있으면 패키지 지정 생략가능 -->
+			<aop:pointcut expression="execution(public void add(String))" id="p4"/>
 			
 			<aop:pointcut expression="execution(* com.test.spring.aop1.MemoImpl.*(..))" id="p5"/>
 			
-			<!-- 메서드 이름 시작이 a / *a(..)은 메서드 끝이 a/ a*a(..) 시작과 끝이 a인 ㅌ메서드 -->
+			<!-- 메서드 이름 시작이 a / *a(..)은 메서드 끝이 a/ a*a(..) 시작과 끝이 a인 메서드 -->
 			<aop:pointcut expression="execution(* com.test.spring.aop1.MemoImpl.a*(..))" id="p6"/>
 			
 			
@@ -91,15 +92,14 @@
 			<!-- <aop:around method="time" pointcut-ref="p5"/> -->
 			
 			<!-- 히스토리 -->
-			<!-- <aop:after-returning method="history" pointcut-ref="p2" returning="memo"/> -->
+			<!-- 주업무의 return 값을 보조업무(history)에 매개변수로 넣어주는 방식 -->
+			<aop:after-returning method="history" pointcut-ref="p2" returning="memo"/>
 			
+			<!-- 에러를 출력해주는 보조업무 -->
 			<aop:after-throwing method="check" pointcut-ref="p2" throwing="e"/>
 			
 		</aop:aspect>
 	</aop:config>
-	
-	
-
 
 
 </beans>
