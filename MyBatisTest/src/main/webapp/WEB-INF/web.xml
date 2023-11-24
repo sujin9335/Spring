@@ -8,7 +8,7 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/spring/root-context.xml</param-value>
 	</context-param>
-	
+
 	<!-- Creates the Spring Container shared by all Servlets and Filters -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -24,14 +24,12 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-		
+
 	<servlet-mapping>
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-	
-	
-	<!-- 인코딩 필터 등록 -->
+
 	<filter>
 		<filter-name>encodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -40,32 +38,9 @@
 			<param-value>UTF-8</param-value>
 		</init-param>
 	</filter>
-	
 	<filter-mapping>
 		<filter-name>encodingFilter</filter-name>
-		<servlet-name>appServlet</servlet-name><!-- 위에 있는 서블릿 처럼 모든거에 적용되게 -->
+		<url-pattern>*</url-pattern> <!-- appServlet 바꿔도 가능 -->
 	</filter-mapping>
 
 </web-app>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -15,3 +15,7 @@ insert into tblMyBatis (seq, name, age, address, gender)
 select * from tblMyBatis;
 
 commit;
+delete from tblMyBatis where seq = 2;
+rollback;
+
+update tblMyBatis set address = '강남' where seq = 3;

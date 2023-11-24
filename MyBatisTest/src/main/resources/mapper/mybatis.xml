@@ -4,14 +4,121 @@
 
 <mapper namespace="mybatis">
 
+	
 	<insert id="add" parameterType="com.test.domain.MyBatisDTO">
 		insert into tblMyBatis (seq, name, age, address, gender)
     		values(seqMyBatis.nextVal, #{name}, #{age}, #{address}, #{gender})
 	</insert>
 
+	<!-- parameterType 은 들어오는 매개변수 값 타입 -->
+	<update id="m1">
+		update tblMyBatis set age = age + 1
+	</update>
 
+	<delete id="m2" parameterType="java.lang.String"> <!-- java.lang만 생략이 가능하다 다른건 확실히 주소 써야됨 -->
+		delete from tblMyBatis where seq = #{seq}
+	</delete>
 
-
+	<insert id="m3" parameterType="com.test.domain.MyBatisDTO">
+		insert into tblMyBatis (seq, name, age, address, gender)
+    		values(seqMyBatis.nextVal, #{name}, #{age}, #{address}, #{gender})
+	</insert>
+	
+	<update id="m4" parameterType="java.util.HashMap">
+		update tblMyBatis set address = #{address} where seq = #{seq}
+	</update>
+	
+	<select id="m5" resultType="Integer"> <!-- 반환값은 resultType -->
+		select count(*) from tblMyBatis
+	</select>
+	
+	<select id="m6" resultType="com.test.domain.MyBatisDTO" parameterType="String">
+		select * from tblMyBatis where seq = #{seq}
+	</select>
+	
+	<!-- select + N행 = resultType > 1행의 자료형만 기재(***) : List<String> 이 아닌 String -->
+	<select id="m7" resultType="String"> 
+		select name from tblMyBatis
+	</select>
+	
+	<select id="m8" resultType="com.test.domain.MyBatisDTO"> 
+		select * from tblMyBatis
+	</select>
+	
+	<!--  
+		select count(*) from 'employees'
+		#{key} > 데이터 바인딩(자료형에 따라 표기가 달라짐) : $으로 고치면 ''가 없어짐
+		
+	-->
+	<select id="m9" resultType="Integer" parameterType="String"> 
+		select count(*) from ${table}
+	</select>
+	
+	<!-- 25살 이하인 '<' 꺽쇠를 인식 못해서 변환  &lt || <![CDATA][]>로 묶기 -->
+	<select id="m10" resultType="Integer"> 
+		select count(*) from tblMyBatis 
+		<![CDATA[
+			where age <= 25
+		]]>
+	</select>
+	
+	<!--  -->
+	<select id="m11" resultType="com.test.domain.MyBatisDTO" parameterType="String">
+		select * from tblMyBatis 
+			where address like '%' || #{word} || '%'
+	</select>
+	
+	<select id="m12" parameterType="String" resultType="String">
+		<!-- 
+			<if test="type == 1">
+			select first_name from employees
+			</if>
+			<if test="type == 2">
+			select last_name from employees
+			</if>
+		-->
+		<!-- 밑으로도 가능 -->
+		select
+		<if test="type == 1">first_name</if>
+		<if test="type == 2">last_name</if>
+		from employees
+		
+	</select>
+	
+	<select id="m13" parameterType="map" resultType="com.test.domain.MyBatisDTO">
+		<!-- 
+			//1. 이름 : m13.do?column=name&word=홍길동
+			//2. 주소 : m13.do?column=address&word=역삼
+			//3. 나이 : m13.do?column=age&word=25 
+		-->
+		select * from tblMyBatis
+			
+			<!-- <if test="column == 'name'">
+			where name = #{word}
+			</if>
+			
+			<if test="column == 'address'">
+			where address like '%' || #{word} || '%'
+			</if>
+			
+			<if test="column == 'age'">
+			<![CDATA[where age <= #{word}]]>
+			</if> -->
+			
+			<choose>
+				<when test="column == 'name'">
+					where name = #{word}
+				</when>
+				<when test="column == 'address'">
+					where address like '%' || #{word} || '%'
+				</when>
+				<when test="column == 'age'">
+					<![CDATA[where age <= #{word}]]>
+				</when>
+			</choose>
+			
+	</select>
+	
 </mapper>
 
 
