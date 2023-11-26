@@ -57,7 +57,7 @@ public class Ex05Controller {
 //	}
 	
 //	@PostMapping(value = "/ex05ok.do")
-//	public String ex05ok(@RequestParam(name = "data") String data, Model model) { //@RequestParam 은 받아온 데이터 name 갑
+//	public String ex05ok(@RequestParam(name = "data") String data, Model model) { //@RequestParam 은 받아온 데이터 name 값
 //		
 //		//이전 방식
 //		//String data=req.getParameter("data");
@@ -103,8 +103,8 @@ public class Ex05Controller {
 	
 	
 	
-//	@PostMapping(value = "/ex05ok.do")
-//	public String ex05ok(String name,
+//	@PostMapping(value = "/ex05ok.do") 
+//	public String ex05ok(String name, //@RequestParam() 을 생략가능하다
 //							String age,
 //							String address,
 //							Model model) {
@@ -145,6 +145,7 @@ public class Ex05Controller {
 //		return "ex05ok";
 //	}
 	
+//	//다중값 받기
 //	@PostMapping(value = "/ex05ok.do")
 //	public String ex05ok(Model model, HttpServletRequest req) {
 //		

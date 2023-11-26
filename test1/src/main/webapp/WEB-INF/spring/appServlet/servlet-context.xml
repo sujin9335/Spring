@@ -22,6 +22,19 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="com.test.test1" />
+
+
+	<!-- 컨트롤러 인식 + 가상 주소 매핑 //틀릴경우 빨간색 오류 나옴-->
+	<beans:bean id="dao" class="com.test.test1.persistence.TestDAOImpl"></beans:bean>
+	
+	<beans:bean name="/test1.do" class="com.test.test1.Test1">
+		<!-- aop로 기본생성자 주입 -->
+		<beans:constructor-arg ref="dao">
+			<!-- 안에 dao 선언해야되지만 위에 선언하고 ref="id 값 주기" -->		
+		</beans:constructor-arg>
+		
+	</beans:bean>
+	
 	
 	
 	

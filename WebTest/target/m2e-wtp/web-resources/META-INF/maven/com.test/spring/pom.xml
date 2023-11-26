@@ -116,7 +116,7 @@
 		    <scope>provided</scope>
 		</dependency>
 		
-		<!-- @ResponseBody 사용 -->
+		<!-- @ResponseBody 사용 Json -->
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 		<dependency>
 		    <groupId>com.fasterxml.jackson.core</groupId>

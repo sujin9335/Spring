@@ -28,9 +28,15 @@ public class Ex02Controller implements Controller{
 		//업무 중 일부 > DB 작업 > DAO 위임
 		//SpringDAO dao=new SpringDAOImpl();
 		
-		int count=dao.getCount();
+		int count=dao.getCount();//DB에서 처리 했다 하고 완료값 가져오기 return 100;
 		
 		ModelAndView mv=new ModelAndView();
+		//mv.setViewName("/WEB-INF/views/test1.jsp"); 를 한것과 동일
+		
+		
+		request.setAttribute("name", "홍길동"); //sevlet 방식
+		
+		mv.addObject("age", 20); //권장 스프링방식
 		
 		mv.addObject("count", count);
 		mv.setViewName("ex02");
