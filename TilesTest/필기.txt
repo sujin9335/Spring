@@ -1,0 +1,19 @@
+
+
+Spring Tiles
+
+1. java + Spring > 버전 변경
+
+2. pom.xml
+	- 4개 의존성 추가
+
+3. servlet-context.xml
+	- 기존 jsp 제거후 추가 : 그리고 /WEB-INF/tiles.xml 생성
+
+
+4. com.test.controller > TestController.java
+
+
+5. 파일복사
+	-Controller 3개 복사
+	
