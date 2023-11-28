@@ -1,0 +1,29 @@
+
+
+
+
+설정
+- pom.xml > 의존성 2개추가
+- web.mxl
+- servlet-context.xml > 태그 1개 추가 : aop 체크 
+
+
+
+
+
+com.test.controller		> AOPConroller.java
+com.test.persistence	> AOPDAO.java(I)
+						> AOPDAOImpl.java(C)
+						
+views > list.jsp
+	  > add.jsp
+	  > view.jsp 
+
+com.test.aspect > Log.java : 보조 업무 객체
+
+
+
+
+
+
+
