@@ -1,0 +1,9 @@
+GET http://localhost:8090/rest/m1.do
+
+###
+
+GET http://localhost:8090/rest/m2.do
+
+###
+
+GET http://localhost:8090/rest/m3.do
