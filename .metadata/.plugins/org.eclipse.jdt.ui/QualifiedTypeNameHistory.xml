@@ -11,7 +11,6 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.support.RedirectAttributes"/>
-    <fullyQualifiedTypeName name="org.springframework.test.context.ContextConfiguration"/>
     <fullyQualifiedTypeName name="lombok.Data"/>
     <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
     <fullyQualifiedTypeName name="org.mybatis.spring.SqlSessionTemplate"/>
@@ -31,12 +30,10 @@
     <fullyQualifiedTypeName name="com.drew.metadata.exif.GpsDirectory"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
     <fullyQualifiedTypeName name="com.test.persistence.AOPAD"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Aspect"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Before"/>
     <fullyQualifiedTypeName name="org.aspectj.lang.annotation.After"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
@@ -45,4 +42,17 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.annotations.Select"/>
+    <fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+    <fullyQualifiedTypeName name="org.springframework.test.context.junit4.SpringJUnit4ClassRunner"/>
+    <fullyQualifiedTypeName name="org.springframework.test.context.ContextConfiguration"/>
+    <fullyQualifiedTypeName name="javax.websocket.OnClose"/>
+    <fullyQualifiedTypeName name="javax.websocket.OnError"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="javax.websocket.server.ServerEndpoint"/>
+    <fullyQualifiedTypeName name="javax.websocket.OnOpen"/>
+    <fullyQualifiedTypeName name="javax.websocket.OnMessage"/>
+    <fullyQualifiedTypeName name="com.test.domain.Message"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 </qualifiedTypeNameHistroy>
