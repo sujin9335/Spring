@@ -110,6 +110,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="F:\Project\Project-jr_Spring\JrSpring"/>
 			<item value="F:\Project\Project-jr_Spring"/>
 			<item value="F:\Project\Project-jr\Project3\JSP_PROJECT_JALANG-I"/>
 			<item value="F:\Project\Project-jr_Spring\Jalang3"/>
