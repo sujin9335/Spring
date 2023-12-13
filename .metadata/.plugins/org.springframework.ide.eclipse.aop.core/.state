@@ -9,8 +9,8 @@
 <aop-project name="WebSocketTest-emo"/>
 <aop-project name="SecurityTest2"/>
 <aop-project name="MyBatisSimpleTest2"/>
-<aop-project name="FileTest"/>
 <aop-project name="WebSocketTest2"/>
+<aop-project name="FileTest"/>
 <aop-project name="Jalang3"/>
 <aop-project name="Jalang"/>
 <aop-project name="Code"/>
@@ -21,6 +21,7 @@
 <aop-project name="WebSocketTest"/>
 <aop-project name="Jalang4"/>
 <aop-project name="RESTTest"/>
+<aop-project name="ElasticsearchTest"/>
 <aop-project name="WebTest"/>
 <aop-project name="BeginTest">
 <aspect-definition advice-class-name="com.test.spring.aop1.Logger" advice-method-name="check" advice-type="AFTER_THROWING" aspect-end-line-number="99" aspect-name="logger" aspect-start-line-number="99" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/BeginTest/src/main/java/com/test/spring/aop1/memo.xml" pointcut-expression="execution(public String com.test.spring.aop1.MemoImpl.read(int))" proxy-target-class="false" throwing="e">

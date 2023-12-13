@@ -141,6 +141,8 @@ C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\83562
 \JrSpring2\src\main\java
 C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\903391747.index
 \TilesTest\src\main\java
+C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1232639942.index
+\ElasticsearchTest\src\main\java
 C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3512673223.index
 \SecurityTest2\src\main\java
 C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1143994194.index
