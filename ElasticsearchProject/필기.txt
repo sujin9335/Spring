@@ -63,6 +63,27 @@
 - ElasticsearchProject > script.sql
 
 
+기존 프로젝트 + 엘라스틱서치 검색 기능 추가
+
+1. 의존성 추가 pom.xml
+
+2. 이미 구축된 오라클 데이테이스의 일부 정보 > 엘라스틱서치
+	- 검색할 정보 > 검색 대상 컬럼 + 검색 결과 화면 출력
+	- tblBook > (seq, title, image, discount, author, publisher) 컬럼
+
+3. 오라클(tblBook) > (복사) > 엘라스틱서치(book)
+	- Logstash(Beats)
+
+
+
+
+
+
+
+
+
+
+
 
 
 

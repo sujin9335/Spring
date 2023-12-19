@@ -28,4 +28,11 @@ public class BookDAOImpl implements BookDAO{
 	public void add(BookDTO dto) {
 		mapper.add(dto);
 	}
+	
+	@Override
+	public String getSeq() {
+		return mapper.getSeq();
+	}
+	
+	
 }
