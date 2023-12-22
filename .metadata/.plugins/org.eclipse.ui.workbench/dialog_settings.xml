@@ -22,6 +22,7 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="F:\Project\제출\스프링 자랑이 최종\7. 구현 소스\스프링 2조 자랑이 소스.zip"/>
 			<item value="C:\Users\user\Desktop\project\12-19.zip"/>
 			<item value="C:\Users\user\Desktop\project\12-13 jr.zip"/>
 			<item value="C:\Users\user\Desktop\project\1212.zip"/>
